@@ -1,0 +1,12 @@
+{
+  "name": "inkwell-heights",
+  "private": true,
+  "description": "Inkwell Heights: a stick-figure city you can play with friends.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.158.0"
+  }
+}

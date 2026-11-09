@@ -1,0 +1,16 @@
+{
+  // Cloudflare settings for Inkwell Heights.
+  // The Worker name in the Cloudflare dashboard must match "name" below.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "inkwell-heights",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "CITY", "class_name": "City" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["City"] }]
+}
